@@ -9,6 +9,7 @@ html, body {
 }
 
   #heading {
+    position: var(10);
     color: chocolate;
     font-family: "Arial";
     font-size: 50
