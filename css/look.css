@@ -1,0 +1,10 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  #heading {
+    color: chocolate;
+    font-family: "Arial";
+    font-size: 50
+}

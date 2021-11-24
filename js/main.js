@@ -1,0 +1,1 @@
+const video = document.getElementByld("video");
