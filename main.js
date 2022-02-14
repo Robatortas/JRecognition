@@ -40,14 +40,13 @@ video.addEventListener('play', () => {
         // Clears the detection box
         canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height);
         
+        faceapi.draw.drawFaceLandmarks(canvas, resizeDetect);
+        faceapi.draw.drawFaceExpressions(canvas, resizeDetect);
+        
         resizeDetect.forEach( detection => {
             const box = detection.detection.box
             const drawBox = new faceapi.draw.DrawBox(box, { label: "Age: " + Math.round(detection.age) + " | Gender: " + detection.gender + " | Name: " + "UNFINISHED" })
             drawBox.draw(canvas)
           })
-
-          faceapi.draw.drawDetections(canvas, resizeDetect);
-            faceapi.draw.drawFaceLandmarks(canvas, resizeDetect);
-            faceapi.draw.drawFaceExpressions(canvas, resizeDetect);
     }, 10)
 })
