@@ -11,7 +11,7 @@ Library:
 faceapi.js
 
 Programmer:
-Robatortas(Diego)
+Robatortas
 
 Team:
 Rodolfo
