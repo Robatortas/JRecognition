@@ -1,12 +1,11 @@
 const video = document.getElementById('video');
-const diego = document.getElementById("diego");
 
 Promise.all([
-    faceapi.nets.tinyFaceDetector.loadFromUri("/library"),
-    faceapi.nets.faceLandmark68Net.loadFromUri("/library"),
-    faceapi.nets.faceRecognitionNet.loadFromUri("/library"),
-    faceapi.nets.faceExpressionNet.loadFromUri("/library"),
-    faceapi.nets.ageGenderNet.loadFromUri('/library')
+  faceapi.nets.tinyFaceDetector.loadFromUri("/library"),
+  faceapi.nets.faceLandmark68Net.loadFromUri("/library"),
+  faceapi.nets.faceRecognitionNet.loadFromUri("/library"),
+  faceapi.nets.faceExpressionNet.loadFromUri("/library"),
+  faceapi.nets.ageGenderNet.loadFromUri('/library')
 ]).then(startVideo)
 
 function startVideo(){
